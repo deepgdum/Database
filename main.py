@@ -87,8 +87,8 @@ def init_db():
             sales_amount INT,
             quantity SMALLINT,
             price INT,
-            FOREIGN KEY (product_key) REFERENCES dim_products(product_key),
-            FOREIGN KEY (customer_key) REFERENCES dm_customers(customer_key)
+            FOREIGN KEY (product_key) REFERENCES products(product_key),
+            FOREIGN KEY (customer_key) REFERENCES procustomers(customer_key)
         );
         """)
 
