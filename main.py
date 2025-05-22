@@ -38,6 +38,8 @@ def init_db():
 
 
         # Drop tables if they exist
+        cur.execute("DROP TABLE IF EXISTS users;")
+        cur.execute("DROP TABLE IF EXISTS orders;")
         cur.execute("DROP TABLE IF EXISTS sales;")
         cur.execute("DROP TABLE IF EXISTS products;")
         cur.execute("DROP TABLE IF EXISTS customers;")
